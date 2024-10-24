@@ -1,6 +1,13 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,41 +16,99 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: white;
+    width: 375px;
+    border-radius: 20px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 24px;
+.header {
+    margin: 0px;
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
+    background-color: #e0e0e0; 
+    padding: 20px 0px 20px 0px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin: 0px 10px 0px 0px;
+}
+
+.logoTexto{
+    width: 200px;
+    height: auto;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: #222;
+    margin-left: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    display: block;
+    font-size: 14px;
     margin-bottom: 5px;
+    color: #444;
 }
 
 input {
-    width: 100%;
     padding: 10px;
+    font-size: 16px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
+.login-btn {
+    background-color: #3367d6;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #2a56c6;
+}
+
+.links {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.links a {
+    font-size: 14px;
+    color: #3367d6;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.register-btn {
+    background-color: #777;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    color: #333;
+.register-btn:hover {
+    background-color: #666;
 }
