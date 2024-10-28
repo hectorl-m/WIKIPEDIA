@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .icon img, .header .menu img {
+    width: 30px;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button img{
+    width: 30px;
+    height: auto;
+    margin: 5px;
+}
+
+.suggestions h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.locations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.location {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.location img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.location p {
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+.footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer a.active {
+    color: rgb(15, 15, 200);
+}
