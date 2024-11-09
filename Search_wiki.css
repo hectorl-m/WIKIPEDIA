@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     padding: 10px;
     background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd50;
 }
 
 .header .icon img, .header .menu img {
